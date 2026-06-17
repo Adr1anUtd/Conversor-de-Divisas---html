@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Conversor de moneda</title>
+</head>
+<body>
+    <header>
+    <h1 class="titulo">Conversor de Moneda</h1>
+    <img src="./media/moneda.png" alt="moneda">
+    </header>
+    <main>
+        <form id="form">
+            <label for="relacion">Tipo de Conversion</label>
+            <select name="relacion" id="relacion">
+                <option value="0">Selecciona la relacion de monedas a convertir</option>
+                <option value="1">Dollar $ a Euro €</option>
+                <option value="2">Euro € a Dollar $</option>
+                <option value="3">Dollar $ a Yen ¥</option>
+                <option value="4">Yen ¥ a Dollar $</option>
+                <option value="5">Euro € a Yen ¥</option>
+                <option value="6">Yen ¥ a Euro €</option>
+            </select>
+            <label for="cantidad">Cantidad a convertir</label>
+            <input type="text" id="cantidad">
+            <p>Conversion</p>
+            <p id="conversion"></p><br>
+            <input type="submit" value="Convertir">
+        </form>
+        <div>
+            <p id="error"></p>
+        </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
